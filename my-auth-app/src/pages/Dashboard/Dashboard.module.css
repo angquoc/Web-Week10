@@ -1,0 +1,153 @@
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  color: #4f46e5;
+  letter-spacing: -0.5px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeText {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.highlight {
+  color: #4f46e5;
+}
+
+.subText {
+  margin: 0 0 30px 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.infoGrid {
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+
+.infoItem {
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.infoItem:hover {
+  transform: translateY(-2px);
+  border-color: #c7d2fe;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.badge {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.logoutButton {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.logoutButton:hover:not(:disabled) {
+  background-color: #fecaca;
+}
+
+.logoutButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loadingText {
+  font-size: 18px;
+  color: #6b7280;
+  margin-top: 50px;
+  text-align: center;
+}

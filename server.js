@@ -15,7 +15,7 @@ const FAKE_USER = {
 //API LOGIN
 app.post('/api/auth/login', (req, res) => {
   const { email, password } = req.body;
-
+  console.log("Dữ liệu nhận được:", req.body);
   //Check login đơn giản
   if (email === "test@gmail.com" && password === "123456") {
     return res.json({

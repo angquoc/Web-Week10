@@ -1,9 +1,19 @@
 import axiosClient from "./axiosClient";
 
 const authApi = {
-    login: (data) => axiosClient.post("/auth/login", data),
-    logout: () => axiosClient.post("/auth/logout"),
-    getProfile: () => axiosClient.get("/auth/profile"),
+    login(data) {
+    const url = "/api/auth/login"; 
+    return axiosClient.post(url, data);
+  },
+
+  getProfile() {
+    const url = "/api/auth/profile"; 
+    return axiosClient.get(url);
+  },
+  
+  logout() {
+      return Promise.resolve(); 
+  }
 };
 
 export default authApi;

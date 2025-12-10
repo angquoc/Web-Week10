@@ -25,7 +25,7 @@ Trang web đã được deploy tại: **[DÁN LINK VERCEL/NETLIFY CỦA BẠN V�
 
 ### 1. Clone dự án
 ```bash
-git clone [LINK_GITHUB_CUA_BAN]
+git clone https://github.com/angquoc/Web-Week10
 cd [TEN_THU_MUC]
 ```
 
